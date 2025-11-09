@@ -1,0 +1,32 @@
+{
+  "Home": "Home",
+  "Login": "Login",
+  "login": {
+    "title": "Login",
+    "subtitle": "Choose your account, then enter password.",
+    "selectUser": "Select a user to continue.",
+    "passwordFor": "Password for {username}",
+    "passwordPlaceholder": "••••••",
+    "signIn": "Sign in",
+    "signingIn": "Signing in..."
+  },
+  "app": {
+    "title": "Todo App",
+    "logOut": "Logout",
+    "wrongPassword": "Invalid password",
+    "loading": "Loading..."
+  },
+  "empty": {
+    "title": "Nothing here",
+    "subtitle": "Try creating something first."
+  },
+  "todos": {
+    "title": "My Todos",
+    "loading": "Loading todos...",
+    "remaining": "{count} remaining",
+    "placeholder": "Add a new task...",
+    "add": "Add",
+    "delete": "Delete",
+    "added": "Task added successfully!"
+  }
+}

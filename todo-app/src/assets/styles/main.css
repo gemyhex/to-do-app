@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body,
+  #app {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-app-gradient min-h-screen text-slate-900;
+  }
+
+  .dark body {
+    @apply bg-app-gradient-dark text-slate-100;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-white/20 bg-white/70 shadow-lg backdrop-blur-lg;
+  }
+
+  .glass {
+    @apply rounded-2xl border border-white/20 bg-white/60 shadow-lg backdrop-blur-lg;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium shadow-sm transition;
+  }
+
+  .btn:hover {
+    @apply shadow;
+  }
+
+  .btn-primary {
+    @apply bg-slate-900 text-white;
+  }
+
+  .btn-primary:hover {
+    @apply bg-slate-800;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent;
+  }
+
+  .btn-ghost:hover {
+    @apply bg-slate-100 text-slate-900;
+  }
+
+  .title {
+    @apply text-2xl font-bold tracking-tight;
+  }
+
+  .muted {
+    @apply text-sm text-slate-600;
+  }
+}
+
+/* Dark */
+.dark .card,
+.dark .glass {
+  @apply border-white/10 bg-white/5;
+}
+
+.dark .muted {
+  @apply text-slate-400;
+}
+
+.input {
+  @apply block w-full rounded-xl border-slate-300 bg-white/70 placeholder-slate-400;
+}
+
+.input:focus {
+  @apply ring-2 ring-indigo-300 border-indigo-400 outline-none;
+}
+
+.dark .input {
+  @apply bg-slate-800/40 border-slate-600 placeholder-slate-500;
+}
+
+.dark .input:focus {
+  @apply ring-indigo-400 border-indigo-400;
+}
+
+@screen md {
+  .btn {
+    @apply text-base;
+  }
+}
